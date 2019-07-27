@@ -3,23 +3,23 @@ package com.itheima.pojo;
 import java.io.Serializable;
 
 public class User implements Serializable {
-    private String name;
+    private String username;
     private String email;
 
     public User() {
     }
 
-    public User(String name, String email) {
-        this.name = name;
+    public User(String username, String email) {
+        this.username = username;
         this.email = email;
     }
 
-    public String getName() {
-        return name;
+    public String getusername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setusername(String username) {
+        this.username = username;
     }
 
     public String getEmail() {
@@ -33,7 +33,7 @@ public class User implements Serializable {
     @Override
     public String toString() {
         return "User{" +
-                "name='" + name + '\'' +
+                "username='" + username + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }
